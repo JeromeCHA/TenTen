@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  TenTen
 //
 //  Created by Jérôme Cha on 29/03/2017.
@@ -8,8 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+protocol HomeViewDelegate {
+  
+}
 
+class HomeViewController: UIViewController, HomeViewDelegate {
+
+  var presenter : HomePresenter?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.

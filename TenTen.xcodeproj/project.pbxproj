@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		9394A7CDDE957DD38A00957F /* Pods_TenTen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B726E78C391DA380A3F9DB /* Pods_TenTen.framework */; };
 		BA46346B1E8B630600565A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46346A1E8B630600565A2F /* AppDelegate.swift */; };
-		BA46346D1E8B630600565A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46346C1E8B630600565A2F /* ViewController.swift */; };
+		BA46346D1E8B630600565A2F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46346C1E8B630600565A2F /* HomeViewController.swift */; };
 		BA4634701E8B630600565A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA46346E1E8B630600565A2F /* Main.storyboard */; };
 		BA4634721E8B630700565A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4634711E8B630700565A2F /* Assets.xcassets */; };
 		BA4634751E8B630700565A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4634731E8B630700565A2F /* LaunchScreen.storyboard */; };
+		BA4634891E8B859400565A2F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634881E8B859400565A2F /* HomeRouter.swift */; };
+		BA46348B1E8B85A600565A2F /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46348A1E8B85A600565A2F /* HomePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +22,13 @@
 		B3B726E78C391DA380A3F9DB /* Pods_TenTen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenTen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4634671E8B630600565A2F /* TenTen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenTen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA46346A1E8B630600565A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA46346C1E8B630600565A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA46346C1E8B630600565A2F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BA46346F1E8B630600565A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA4634711E8B630700565A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA4634741E8B630700565A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA4634761E8B630700565A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA4634881E8B859400565A2F /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		BA46348A1E8B85A600565A2F /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		C7AAEC8446D8E096EE328117 /* Pods-TenTen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenTen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenTen/Pods-TenTen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,14 +65,64 @@
 		BA4634691E8B630600565A2F /* TenTen */ = {
 			isa = PBXGroup;
 			children = (
+				BA4634871E8B83BC00565A2F /* Home */,
 				BA46346A1E8B630600565A2F /* AppDelegate.swift */,
-				BA46346C1E8B630600565A2F /* ViewController.swift */,
 				BA46346E1E8B630600565A2F /* Main.storyboard */,
 				BA4634711E8B630700565A2F /* Assets.xcassets */,
 				BA4634731E8B630700565A2F /* LaunchScreen.storyboard */,
 				BA4634761E8B630700565A2F /* Info.plist */,
 			);
 			path = TenTen;
+			sourceTree = "<group>";
+		};
+		BA4634821E8B83A600565A2F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BA4634881E8B859400565A2F /* HomeRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		BA4634831E8B83AB00565A2F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		BA4634841E8B83AF00565A2F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BA46348A1E8B85A600565A2F /* HomePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		BA4634851E8B83B300565A2F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		BA4634861E8B83B700565A2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA46346C1E8B630600565A2F /* HomeViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BA4634871E8B83BC00565A2F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA4634861E8B83B700565A2F /* View */,
+				BA4634851E8B83B300565A2F /* Interactor */,
+				BA4634841E8B83AF00565A2F /* Presenter */,
+				BA4634831E8B83AB00565A2F /* Entity */,
+				BA4634821E8B83A600565A2F /* Router */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		FCBAC9162DE25EA6638CAC58 /* Frameworks */ = {
@@ -211,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA46346D1E8B630600565A2F /* ViewController.swift in Sources */,
+				BA46346D1E8B630600565A2F /* HomeViewController.swift in Sources */,
+				BA4634891E8B859400565A2F /* HomeRouter.swift in Sources */,
 				BA46346B1E8B630600565A2F /* AppDelegate.swift in Sources */,
+				BA46348B1E8B85A600565A2F /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +430,7 @@
 				BA46347B1E8B630700565A2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
