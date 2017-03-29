@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9394A7CDDE957DD38A00957F /* Pods_TenTen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B726E78C391DA380A3F9DB /* Pods_TenTen.framework */; };
 		BA46346B1E8B630600565A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46346A1E8B630600565A2F /* AppDelegate.swift */; };
 		BA46346D1E8B630600565A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46346C1E8B630600565A2F /* ViewController.swift */; };
 		BA4634701E8B630600565A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA46346E1E8B630600565A2F /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		241207FECF62C26E6F5029EE /* Pods-TenTen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenTen.release.xcconfig"; path = "Pods/Target Support Files/Pods-TenTen/Pods-TenTen.release.xcconfig"; sourceTree = "<group>"; };
+		B3B726E78C391DA380A3F9DB /* Pods_TenTen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenTen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4634671E8B630600565A2F /* TenTen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenTen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA46346A1E8B630600565A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA46346C1E8B630600565A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		BA4634711E8B630700565A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA4634741E8B630700565A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA4634761E8B630700565A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AAEC8446D8E096EE328117 /* Pods-TenTen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenTen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenTen/Pods-TenTen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9394A7CDDE957DD38A00957F /* Pods_TenTen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				BA4634691E8B630600565A2F /* TenTen */,
 				BA4634681E8B630600565A2F /* Products */,
+				FFFDEA27A928AEDD14CCC627 /* Pods */,
+				FCBAC9162DE25EA6638CAC58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = TenTen;
 			sourceTree = "<group>";
 		};
+		FCBAC9162DE25EA6638CAC58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3B726E78C391DA380A3F9DB /* Pods_TenTen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFFDEA27A928AEDD14CCC627 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAEC8446D8E096EE328117 /* Pods-TenTen.debug.xcconfig */,
+				241207FECF62C26E6F5029EE /* Pods-TenTen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA4634791E8B630700565A2F /* Build configuration list for PBXNativeTarget "TenTen" */;
 			buildPhases = (
+				87DB7C4E97251C3CB0CA8D03 /* [CP] Check Pods Manifest.lock */,
 				BA4634631E8B630600565A2F /* Sources */,
 				BA4634641E8B630600565A2F /* Frameworks */,
 				BA4634651E8B630600565A2F /* Resources */,
+				24C673FA1EEA684DC93A9E87 /* [CP] Embed Pods Frameworks */,
+				69F188C3AA81351CC5D1BE40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24C673FA1EEA684DC93A9E87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenTen/Pods-TenTen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69F188C3AA81351CC5D1BE40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenTen/Pods-TenTen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87DB7C4E97251C3CB0CA8D03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA4634631E8B630600565A2F /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		BA46347A1E8B630700565A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7AAEC8446D8E096EE328117 /* Pods-TenTen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TenTen/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		BA46347B1E8B630700565A2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241207FECF62C26E6F5029EE /* Pods-TenTen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TenTen/Info.plist;
