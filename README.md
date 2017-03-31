@@ -53,11 +53,17 @@ end
 main()
 ```
 
-### Requirements
+### Stack
+
+This is what the stack should look like before the program gets executed.
+
+![stack](https://github.com/JeromeCHA/TenTen/blob/master/stack.png)
+
+## Requirements
 - iOS 9.0+
 - Swift 3
 
-### How does it work?
+## How does it work?
 
 This project was developed with [VIPER architecture](https://www.objc.io/issues/13-architecture/viper/) + [RxSwift](https://github.com/ReactiveX/RxSwift).
 I know that there is no need to use all of the previous stuff to solve this problem, but I think it is a good opportunity to show you my skills.
