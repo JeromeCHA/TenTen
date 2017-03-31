@@ -53,7 +53,7 @@ I know that there is no need to use all of the previous stuff to solve this prob
     
 - Router : Will handle the redirections and the initialization of the VIPER Architecture
 
-The problem in VIPER Architecture is that each interactor should notifie the presenter. That means a lot of callbacks/delegates.
-To avoid this, I used Rx. Therefore, each Interactor will create an Observable object and the Presenter will be the Observer.
+The problem in VIPER Architecture is that each interactor should notify the presenter. That means a lot of callbacks/delegates.
+To avoid this, I used Rx. Therefore, each Interactor will emit an Observable object and the Presenter will be the Observer.
 
 If you have any questions, improvements or encounter any issues, please feel free to ask me.
