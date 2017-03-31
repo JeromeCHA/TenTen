@@ -60,4 +60,4 @@ If you have any questions, improvements or encounter any issues, please feel fre
 
 ## TODO
 - PRINTInteractor needs to be improve
-- Should improve the run() when RxSwift will have *RepeatWhen* !! ..
+- Now the program will execute all instructions and will stop with a STOPError, which is not very a good implementation of Rx.. So, I should improve the run() when RxSwift will have *RepeatWhen* !! ..
