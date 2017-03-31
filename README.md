@@ -57,3 +57,7 @@ The problem in VIPER Architecture is that each interactor should notify the pres
 To avoid this, I used Rx. Therefore, each Interactor will emit an Observable object and the Presenter will be the Observer.
 
 If you have any questions, improvements or encounter any issues, please feel free to ask me.
+
+## TODO
+- PRINTInteractor needs to be improve
+- Should improve the run() when RxSwift will have *RepeatWhen* !! ..
