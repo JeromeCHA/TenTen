@@ -9,16 +9,17 @@
 import UIKit
 
 protocol HomeViewDelegate {
-  
+  func print(_ value:Int)
 }
 
 class HomeViewController: UIViewController, HomeViewDelegate {
 
+  @IBOutlet weak var displayTextView: UITextView!
   var presenter : HomePresenter?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    self.presenter?.createStack()
   }
 
   override func didReceiveMemoryWarning() {
@@ -26,6 +27,13 @@ class HomeViewController: UIViewController, HomeViewDelegate {
     // Dispose of any resources that can be recreated.
   }
 
-
+  //MARK: - HomeViewDelegate
+  func print(_ value:Int) {
+    if self.displayTextView.text == "" {
+      self.displayTextView.text = "\(value)"
+    } else {
+      self.displayTextView.text = "\(self.displayTextView.text!)\n\(value)"
+    }
+  }
 }
 

@@ -15,6 +15,14 @@
 		BA4634751E8B630700565A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4634731E8B630700565A2F /* LaunchScreen.storyboard */; };
 		BA4634891E8B859400565A2F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634881E8B859400565A2F /* HomeRouter.swift */; };
 		BA46348B1E8B85A600565A2F /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46348A1E8B85A600565A2F /* HomePresenter.swift */; };
+		BA46348D1E8BA0B000565A2F /* MULTInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46348C1E8BA0B000565A2F /* MULTInteractor.swift */; };
+		BA46348F1E8BA0BE00565A2F /* CALLInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46348E1E8BA0BE00565A2F /* CALLInteractor.swift */; };
+		BA4634911E8BA0D100565A2F /* RETInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634901E8BA0D100565A2F /* RETInteractor.swift */; };
+		BA4634931E8BA13300565A2F /* STOPInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634921E8BA13300565A2F /* STOPInteractor.swift */; };
+		BA4634951E8BA1FE00565A2F /* PRINTInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634941E8BA1FE00565A2F /* PRINTInteractor.swift */; };
+		BA4634971E8BA21300565A2F /* PUSHInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634961E8BA21300565A2F /* PUSHInteractor.swift */; };
+		BA4634991E8BA23500565A2F /* ComputerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634981E8BA23500565A2F /* ComputerEntity.swift */; };
+		BA46349B1E8BA6AA00565A2F /* StackEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46349A1E8BA6AA00565A2F /* StackEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +37,14 @@
 		BA4634761E8B630700565A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA4634881E8B859400565A2F /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		BA46348A1E8B85A600565A2F /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		BA46348C1E8BA0B000565A2F /* MULTInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MULTInteractor.swift; sourceTree = "<group>"; };
+		BA46348E1E8BA0BE00565A2F /* CALLInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALLInteractor.swift; sourceTree = "<group>"; };
+		BA4634901E8BA0D100565A2F /* RETInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RETInteractor.swift; sourceTree = "<group>"; };
+		BA4634921E8BA13300565A2F /* STOPInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STOPInteractor.swift; sourceTree = "<group>"; };
+		BA4634941E8BA1FE00565A2F /* PRINTInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRINTInteractor.swift; sourceTree = "<group>"; };
+		BA4634961E8BA21300565A2F /* PUSHInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PUSHInteractor.swift; sourceTree = "<group>"; };
+		BA4634981E8BA23500565A2F /* ComputerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerEntity.swift; sourceTree = "<group>"; };
+		BA46349A1E8BA6AA00565A2F /* StackEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackEntity.swift; sourceTree = "<group>"; };
 		C7AAEC8446D8E096EE328117 /* Pods-TenTen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenTen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenTen/Pods-TenTen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +102,8 @@
 		BA4634831E8B83AB00565A2F /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				BA4634981E8BA23500565A2F /* ComputerEntity.swift */,
+				BA46349A1E8BA6AA00565A2F /* StackEntity.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -101,6 +119,12 @@
 		BA4634851E8B83B300565A2F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				BA46348C1E8BA0B000565A2F /* MULTInteractor.swift */,
+				BA46348E1E8BA0BE00565A2F /* CALLInteractor.swift */,
+				BA4634901E8BA0D100565A2F /* RETInteractor.swift */,
+				BA4634941E8BA1FE00565A2F /* PRINTInteractor.swift */,
+				BA4634921E8BA13300565A2F /* STOPInteractor.swift */,
+				BA4634961E8BA21300565A2F /* PUSHInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -177,6 +201,7 @@
 				TargetAttributes = {
 					BA4634661E8B630600565A2F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DKZ4T4EY3Y;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -265,10 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4634951E8BA1FE00565A2F /* PRINTInteractor.swift in Sources */,
+				BA4634931E8BA13300565A2F /* STOPInteractor.swift in Sources */,
 				BA46346D1E8B630600565A2F /* HomeViewController.swift in Sources */,
+				BA46349B1E8BA6AA00565A2F /* StackEntity.swift in Sources */,
 				BA4634891E8B859400565A2F /* HomeRouter.swift in Sources */,
+				BA46348D1E8BA0B000565A2F /* MULTInteractor.swift in Sources */,
 				BA46346B1E8B630600565A2F /* AppDelegate.swift in Sources */,
+				BA4634971E8BA21300565A2F /* PUSHInteractor.swift in Sources */,
+				BA46348F1E8BA0BE00565A2F /* CALLInteractor.swift in Sources */,
+				BA4634911E8BA0D100565A2F /* RETInteractor.swift in Sources */,
 				BA46348B1E8B85A600565A2F /* HomePresenter.swift in Sources */,
+				BA4634991E8BA23500565A2F /* ComputerEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +423,9 @@
 			baseConfigurationReference = C7AAEC8446D8E096EE328117 /* Pods-TenTen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DKZ4T4EY3Y;
 				INFOPLIST_FILE = TenTen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerome.TenTen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -403,7 +438,9 @@
 			baseConfigurationReference = 241207FECF62C26E6F5029EE /* Pods-TenTen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DKZ4T4EY3Y;
 				INFOPLIST_FILE = TenTen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerome.TenTen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
